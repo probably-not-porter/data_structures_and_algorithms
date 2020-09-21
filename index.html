@@ -41,20 +41,18 @@
                 var alg = e.options[e.selectedIndex].value;
 
                 var input_raw = document.getElementById("sorting-input").value;
-
                 var input_strings = input_raw.split(',');
-
                 var input_nums = [];
-
                 for (s in input_strings){
                     input_nums.push(Number(input_strings[s]))
                 }
-
                 if (input_nums.includes(NaN)){
                     console.error('Not a Number!');
                 }
                 else{
-                    console.log(alg, input_nums);
+                    if (alg == 'insertion'){
+                        
+                    }
                 } 
             }
 
