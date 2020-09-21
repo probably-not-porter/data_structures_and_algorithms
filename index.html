@@ -27,6 +27,7 @@
 
             <select name="sorting" id="sorting-select">
               <option value="insertion">Insertion Sort</option>
+              <option value="quick">Quick Sort</option>
             </select> 
             <br><br>
             <input type='text' id='sorting-input' placeholder="Values to sort (1,2,3,4)">
@@ -37,6 +38,7 @@
         </div>
 
         <script src='sort_algorithms/insertion_sort.js'></script>
+        <script src='sort_algorithms/quick_sort.js'></script>
         <script>
             function sort(){
                 var output = [];
@@ -61,6 +63,10 @@
                 else{
                     if (alg == 'insertion'){
                         output = insertionSort(input_nums);
+                        document.getElementById('sorting-output').innerHTML = "Sorted List: [" + output + "]";
+                    }
+                    else if (alg == 'quick'){
+                        output = quickSort(input_nums, 0, input_nums.length - 1);
                         document.getElementById('sorting-output').innerHTML = "Sorted List: [" + output + "]";
                     }
                 } 
