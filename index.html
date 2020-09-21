@@ -3,13 +3,19 @@
     <head>
         <style>
             #sorting{
-                background-color: gray;
+                background-color:#eee;
                 display: inline-block;
                 width: 50%;
                 height: 400px;
-
+            }
+            #sorting-output{
+                background-color: #ddd;
+                padding: 10px;
             }
         </style>
+
+        <meta charset="UTF-8">
+
     </head>
     <body>
         <h1>Data Structures and Algorithms</h1>
@@ -21,21 +27,19 @@
 
             <select name="sorting" id="sorting-select">
               <option value="insertion">Insertion Sort</option>
-              <option value="saab">Saab</option>
-              <option value="mercedes">Mercedes</option>
-              <option value="audi">Audi</option>
             </select> 
             <br><br>
-            <input type='text' id='sorting-input'>
+            <input type='text' id='sorting-input' placeholder="Values to sort (1,2,3,4)">
             <br><br>
             <button id='sorting-button' onclick='sort()'>Go</button>
             <br><br>
-            <p id='sorting-output'></p>
+            <span id='sorting-output'></span>
         </div>
 
-
+        <script src='sort_algorithms/insertion_sort.js'></script>
         <script>
             function sort(){
+                var output = [];
                 // get algorithm
                 var e = document.getElementById("sorting-select");
                 var alg = e.options[e.selectedIndex].value;
@@ -48,10 +52,16 @@
                 }
                 if (input_nums.includes(NaN)){
                     console.error('Not a Number!');
+                    document.getElementById('sorting-output').innerHTML = "What you entered could not be sorted! :(";
+                }
+                else if(input_nums.length == 0){
+                    console.error('Nothing Entered!');
+                    document.getElementById('sorting-output').innerHTML = "Enter some numbers above!";
                 }
                 else{
                     if (alg == 'insertion'){
-                        
+                        output = insertionSort(input_nums);
+                        document.getElementById('sorting-output').innerHTML = "Sorted List: [" + output + "]";
                     }
                 } 
             }
