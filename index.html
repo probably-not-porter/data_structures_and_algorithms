@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #sorting{
+                background-color: gray;
+                display: inline-block;
+                width: 50%;
+                height: 400px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Data Structures and Algorithms</h1>
+        <h2>This HTML page will serve as a demonstration for the JS implementations</h2>
+
+        <div id='sorting'>
+            <h2>Sorting Algorithms</h2>
+            <label for="sorting">Choose an algorithm:</label>
+
+            <select name="sorting" id="sorting-select">
+              <option value="insertion">Insertion Sort</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select> 
+            <br><br>
+            <input type='text' id='sorting-input'>
+            <br><br>
+            <button id='sorting-button' onclick='sort()'>Go</button>
+            <br><br>
+            <p id='sorting-output'></p>
+        </div>
+
+
+        <script>
+            function sort(){
+                // get algorithm
+                var e = document.getElementById("sorting-select");
+                var alg = e.options[e.selectedIndex].value;
+
+                var input_raw = document.getElementById("sorting-input").value;
+
+                var input_strings = input_raw.split(',');
+
+                var input_nums = [];
+
+                for (s in input_strings){
+                    input_nums.push(Number(input_strings[s]))
+                }
+
+                if (input_nums.includes(NaN)){
+                    console.error('Not a Number!');
+                }
+                else{
+                    console.log(alg, input_nums);
+                } 
+            }
+
+            function isNumeric(value) {
+                return /^-?\d+$/.test(value);
+            }
+        </script>
+    </body>
+</html>
