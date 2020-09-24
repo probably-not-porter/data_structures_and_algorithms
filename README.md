@@ -18,11 +18,11 @@ MergeSort, HeapSort, BubbleSort, InsertionSort, SelectSort, BucketSort, RadixSor
 ## **In-Progress:**
 - Javascript
 - Go
+- PHP
 
 ## **Planned:**
 - C#
 - C++
-- PHP
 
 # Search Algorithms
 Depth-first Search, Breadth-first Search, Binary Search, Linear Search, Djikstra's Algorithm, Bellman-Ford Algorithm
