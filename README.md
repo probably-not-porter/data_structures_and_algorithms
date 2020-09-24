@@ -17,11 +17,11 @@ MergeSort, HeapSort, BubbleSort, InsertionSort, SelectSort, BucketSort, RadixSor
 
 ## **In-Progress:**
 - Javascript
+- Go
 
 ## **Planned:**
 - C#
 - C++
-- Go
 - PHP
 
 # Search Algorithms
