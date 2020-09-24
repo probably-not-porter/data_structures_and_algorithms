@@ -5,15 +5,15 @@
 package main
 import ("fmt")
 
-func bubbleSort(data []int) []int {
-	for i := 0; i < len(data); i++ {
-		for j := 1; j < len(data)-i; j++ {
-			if data[j] < data[j-1] {
-				data[j], data[j-1] = data[j-1], data[j]
+func bubbleSort(Arr []int) []int {
+	for x := 0; x < len(Arr); x++ {
+		for y := 1; y < len(Arr)-x; y++ {
+			if Arr[y] < Arr[y-1] {
+				Arr[y], Arr[y-1] = Arr[y-1], Arr[y]
 			}
 		}
 	}
-	return data
+	return Arr
 }
 
 // Example
