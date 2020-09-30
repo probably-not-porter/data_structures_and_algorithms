@@ -3,23 +3,23 @@
 // Porter L
 
 function partition(Arr, low, high){
-    var i = (low - 1);
+    var x = (low - 1);
     pivot = Arr[high];
 
-    for (var j = low; j < high; j++){
-        if (Arr[j] < pivot){
-            i = i + 1;
+    for (var y = low; y < high; y++){
+        if (Arr[y] < pivot){
+            x = x + 1;
             
-            var b = Arr[i];
-            Arr[i] = Arr[j];
-            Arr[j] = b;
+            var b = Arr[x];
+            Arr[x] = Arr[y];
+            Arr[y] = b;
         }
     }
-    var b = Arr[i+1];
-    Arr[i+1] = Arr[high];
+    var b = Arr[x+1];
+    Arr[x+1] = Arr[high];
     Arr[high] = b;
 
-    return (i + 1) 
+    return (x + 1) 
 }
 
 function quickSort(Arr,low,high){

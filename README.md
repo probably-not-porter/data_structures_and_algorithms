@@ -1,5 +1,13 @@
 # Data Structures and Algorithms
-Repository to practice and catalogue all my work on various datastructures, as well as search and sort algorithms.
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-go.svg)](https://forthebadge.com)
+
+
+
+Repository to practice with various languages by way of recreating and translating algorithms and data structures.
 
 My implementations are original code, though some are created with reference to other implementations, or textbook/internet research.
 
