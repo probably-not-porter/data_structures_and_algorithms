@@ -30,6 +30,7 @@
               <option value="quick">Quick Sort</option>
               <option value="merge">Merge Sort</option>
               <option value="bubble">Bubble Sort</option>
+              <option value="selection">Selection Sort</option>
             </select> 
             <br><br>
             <input type='text' id='sorting-input' placeholder="Values to sort (1,2,3,4)">
@@ -43,6 +44,7 @@
         <script src='sort_algorithms/javascript/quick_sort.js'></script>
         <script src='sort_algorithms/javascript/merge_sort.js'></script>
         <script src='sort_algorithms/javascript/bubble_sort.js'></script>
+        <script src='sort_algorithms/javascript/selection_sort.js'></script>
         <script>
             function sort(){
                 var output = [];
@@ -79,6 +81,10 @@
                     }
                     else if (alg == 'bubble'){
                         output = bubbleSort(input_nums);
+                        document.getElementById('sorting-output').innerHTML = "Sorted List: [" + output + "]";
+                    }
+                    else if (alg == 'selection'){
+                        output = selectionSort(input_nums);
                         document.getElementById('sorting-output').innerHTML = "Sorted List: [" + output + "]";
                     }
                 } 
