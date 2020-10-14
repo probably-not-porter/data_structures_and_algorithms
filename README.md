@@ -5,7 +5,7 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-go.svg)](https://forthebadge.com)
 
-
+[![forthebadge](https://forthebadge.com/images/badges/made-with-php.svg)](https://forthebadge.com)
 
 Repository to practice with various languages by way of recreating and translating algorithms and data structures.
 
