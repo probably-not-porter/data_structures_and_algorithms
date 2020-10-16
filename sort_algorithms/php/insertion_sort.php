@@ -3,7 +3,7 @@
 // PHP
 // Porter L
 
-function insertion_Sort($Arr)
+function insertionSort($Arr)
 {
     for($x=0;$x<count($Arr);$x++){
         $num = $Arr[$x];
@@ -22,7 +22,7 @@ $test_array = array(2,7,22,71,5,3,11,9,7,5,4,3,56,3,23,43,97,3);
 echo "Original Array : ";
 echo implode(', ',$test_array );
 echo "\nSorted Array : ";
-echo implode(', ',insertion_Sort($test_array));
+echo implode(', ',insertionSort($test_array));
 echo "\n";
 
 ?>
