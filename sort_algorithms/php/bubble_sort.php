@@ -8,7 +8,7 @@ function bubbleSort($Arr){
         for ($y = 0; $y < count($Arr) - $x - 1; $y++){
             if ($Arr[$y] > $Arr[$y + 1]){
                 $b = $Arr[$y];
-                $Arr[$y] = $Arr[$y];
+                $Arr[$y] = $Arr[$y + 1];
                 $Arr[$y + 1] = $b;
             }
         }
