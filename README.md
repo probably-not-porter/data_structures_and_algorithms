@@ -43,9 +43,9 @@ My goal is to implement these things in all the languages I can, in order to pra
 MergeSort, HeapSort, BubbleSort, InsertionSort, SelectSort, BucketSort, RadixSort, QuickSort
 ## **Completed:**
 - Python
+- Javascript
 
 ## **In-Progress:**
-- Javascript
 - Go
 - PHP
 

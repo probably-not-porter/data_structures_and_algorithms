@@ -33,7 +33,7 @@
               <option value="selection">Selection Sort</option>
               <option value="bucket">Bucket Sort</option>
               <option value="heap">Heap Sort</option>
-
+              <option value="radix">Radix Sort</option>
             </select> 
             <br><br>
             <input type='text' id='sorting-input' placeholder="Values to sort (1,2,3,4)">
@@ -50,6 +50,7 @@
         <script src='sort_algorithms/javascript/selection_sort.js'></script>
         <script src='sort_algorithms/javascript/bucket_sort.js'></script>
         <script src='sort_algorithms/javascript/heap_sort.js'></script>
+        <script src='sort_algorithms/javascript/radix_sort.js'></script>
 
         <script>
             function sort(){
@@ -99,6 +100,10 @@
                     }
                     else if (alg == 'heap'){
                         output = heapSort(input_nums);
+                        document.getElementById('sorting-output').innerHTML = "Sorted List: [" + output + "]";
+                    }
+                    else if (alg == 'radix'){
+                        output = radixSort(input_nums);
                         document.getElementById('sorting-output').innerHTML = "Sorted List: [" + output + "]";
                     }
                 } 
