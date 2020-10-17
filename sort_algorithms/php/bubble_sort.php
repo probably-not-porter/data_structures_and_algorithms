@@ -1,5 +1,5 @@
 <?php
-// Selection Sort
+// Bubble Sort
 // PHP
 // Porter L
 
