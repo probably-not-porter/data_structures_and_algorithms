@@ -10,7 +10,6 @@ class Node:
         self.next_node = next_node
 
     # Methods
-
     def get_data(self):
         return self.data
 
@@ -28,7 +27,6 @@ class LinkedList:
         self.head = head
 
     # Methods
-    
     def insert(self, data):
         """ Adds a new node as the head of the list, pushing everything else by 1 """
         new_node = Node(data)
@@ -82,8 +80,8 @@ if __name__=='__main__':
     list.insert(1)
     list.insert(2)
     list.insert(3)
-    print(list.size()) # shoudl be 3
+    print(list.size()) # should be 3
     list.search(2)
     #list.delete(4) # should be valueerror
-    list.delete(2) # should not be valueerror
+    list.delete(2) 
     print(list.size()) # should be 2
